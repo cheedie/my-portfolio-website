@@ -2,6 +2,7 @@ import getElement from "./getElement.js";
 const navbar = getElement("#nav");
 const navBtn = getElement("#nav-btn");
 const closeBtn = getElement("#close-btn");
+const closeModalBtn = getElement(".close-modal-btn");
 const sidebar = getElement("#sidebar");
 const topLink = getElement("#return-to-top");
 const date = getElement("#date");
@@ -59,4 +60,7 @@ date.innerHTML = new Date().getFullYear();
 //open and close modal
 modalBtn.addEventListener("click", function () {
   modal.classList.add("open-modal");
+});
+closeModalBtn.addEventListener("click", function () {
+  modal.classList.remove("open-modal");
 });

@@ -768,8 +768,9 @@ PROJECTS
   font-size: 1.2rem;
 }
 
-.close-btn {
+.close-modal-btn {
   color: hsl(360, 67%, 44%);
+  background: transparent;
   border: none;
   font-size: 2.5rem;
   font-weight: bold;
@@ -779,7 +780,7 @@ PROJECTS
   transition: var(--transition);
   cursor: pointer;
 }
-.close-btn:hover {
+.close-modal-btn:hover {
   color: hsl(360, 71%, 66%);
   transform: scale(1.3);
 }
