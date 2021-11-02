@@ -8,6 +8,12 @@ const topLink = getElement("#return-to-top");
 const date = getElement("#date");
 const modal = getElement("#modal-container");
 const modalBtn = getElement("#modal-btn");
+const decisionBtn = getElement("#decisionBtn");
+const decisionModalContainer = getElement("#decision-modal-container");
+const wixBtn = getElement("#wix-btn");
+const wixModalContainer = getElement("#wix-modal-container");
+const todolistBtn = getElement("#to-do-btn");
+const todolistModalContainer = getElement("#todolist-modal-container");
 
 // show sidebar
 navBtn.addEventListener("click", function () {
@@ -25,16 +31,6 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar-fixed");
   }
 });
-
-// add fixed-navbar color
-// document.addEventListener("scroll", () => {
-//   var scroll_position = window.scrollY;
-//   if (scroll_position > 250) {
-//     header.style.backgroundColor = "#29323c";
-//   } else {
-//     header.style.backgroundColor = "transparent";
-//   }
-// });
 
 // smooth scroll
 const scrollLinks = document.querySelectorAll(".scroll-link");
@@ -63,4 +59,25 @@ modalBtn.addEventListener("click", function () {
 });
 closeModalBtn.addEventListener("click", function () {
   modal.classList.remove("open-modal");
+});
+
+decisionBtn.addEventListener("click", function () {
+  decisionModalContainer.classList.add("open-modal");
+});
+closeModalBtn.addEventListener("click", function () {
+  decisionModalContainer.classList.remove("open-modal");
+});
+
+wixBtn.addEventListener("click", function () {
+  wixModalContainer.classList.add("open-modal");
+});
+closeModalBtn.addEventListener("click", function () {
+  wixModalContainer.classList.remove("open-modal");
+});
+
+todolistBtn.addEventListener("click", function () {
+  todolistModalContainer.classList.add("open-modal");
+});
+closeModalBtn.addEventListener("click", function () {
+  todolistModalContainer.classList.remove("open-modal");
 });

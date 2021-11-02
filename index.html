@@ -62,6 +62,9 @@
                     <i class="fab fa-twitter"></i></a></li>
             <li><a href=" http://instagram.com/cheedie_" class="social-icon">
                     <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/cheedie" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a></li>
         </ul> 
       </article>
       <article class="hero-img">
@@ -81,7 +84,6 @@
        <li><a href="#About" data-after="About" class="scroll-link">About</a></li>
                         <li><a href="#Services" data-after="Services" class="scroll-link">Services</a></li>
                         <li><a href="#Projects" data-after="Projects" class="scroll-link">Projects</a></li>
-                        <!-- <li><a href="#Skills" data-after="Stack" class="scroll-link">Skills</a></li> -->
                         <li><a href="#Contact" data-after="contact" class="scroll-link">contact</a></li>
       </ul>
       <!-- social icons -->
@@ -94,6 +96,9 @@
                     <i class="fab fa-twitter"></i></a></li>
             <li><a href=" http://instagram.com/cheedie_" class="social-icon">
                     <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/cheedie" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a></li>
       </ul>
     </div>
   </aside>
@@ -165,8 +170,10 @@
         <div class="service-title">
             <h2 class="section-title">skills</h2>
         </div>
-        <div class="section skills-center">
+        <div class="skills-container section">
+          <div class="skills-center">
             <article>
+              <h3>Front-end</h3>
                 <div class="skill">
                     <div class="skill-container">
                         <div class="skill-value"></div>
@@ -176,27 +183,62 @@
                 </div>
                 <div class="skill">
                     <div class="skill-container">
-                        <div class="skill-value value-70"></div>
-                        <p class="skill-text skill-text-70">70%</p>
+                        <div class="skill-value value-80"></div>
+                        <p class="skill-text skill-text-80">80%</p>
                     </div>
                     <p>CSS</p>
                 </div>
                 <div class="skill">
                     <div class="skill-container">
-                        <div class="skill-value value-40"></div>
-                        <p class="skill-text skill-text-40">40%</p>
+                        <div class="skill-value value-70"></div>
+                        <p class="skill-text skill-text-70">70%</p>
                     </div>
                     <p>JavaScript</p>
                 </div>
                 <div class="skill">
                     <div class="skill-container">
-                        <div class="skill-value value-30"></div>
-                        <p class="skill-text skill-text-30">30%</p>
+                        <div class="skill-value value-50"></div>
+                        <p class="skill-text skill-text-50">50%</p>
                     </div>
                     <p>React</p>
                 </div>
             </article>
-
+        </div>
+        <div class="skills-center">
+            <article>
+              <h3>Back-end</h3>
+                <div class="skill">
+                    <div class="skill-container">
+                        <div class="skill-value value-70"></div>
+                        <p class="skill-text skill-text-70">70%</p>
+                    </div>
+                    <p>Node JS</p>
+                </div>
+                <div class="skill">
+                    <div class="skill-container">
+                        <div class="skill-value value-50"></div>
+                        <p class="skill-text skill-text-50">50%</p>
+                    </div>
+                    <p>Express JS</p>
+                </div>
+                <div class="skill">
+                    <div class="skill-container">
+                        <div class="skill-value value-50"></div>
+                        <p class="skill-text skill-text-50">50%</p>
+                    </div>
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill">
+                    <div class="skill-container">
+                        <div class="skill-value value-50"></div>
+                        <p class="skill-text skill-text-50">50%</p>
+                    </div>
+                    <p>Mongoose</p>
+                </div>
+            </article>
+        </div>
+        </div>
+        
     </section>
     <!-- END OF SKILLS -->
 
@@ -211,10 +253,23 @@
                     <img src="./images/projects/wix-images/image-3.png" class="project-img" alt="project">
                     <div class="project-info">
                         <h4>Wix website</h4>
-                        <button class="more-button"><i class="fas fa-ellipsis-h"></i></button>
+                        <button class="more-button" id="wix-btn"><i class="fas fa-ellipsis-h"></i></button>
                     </div>
                 </article>
             </div>
+            <!-- wix modal -->
+            <div class="modal" id="wix-modal-container">
+                <div class="modal-content">
+                    <button class="close-modal-btn"><i class="fas fa-times"></i></button>
+                    <img src="./images/projects/wix-images/image-2.png" class="modal-photo1" alt="tea station">
+                    <h3>WIX CLONE WEBSITE</h3>
+                    <p>I cloned the popular wix website to display my skills in html and css</p>
+                    <button class="btn live-btn" type="button"><a href="https://wix-clone-site.netlify.app/">Live
+                            Website</a></button>
+                </div>         
+            </div>
+            <!-- end of wix modal -->
+
             <div class="project-2">
                 <article class="project">
                     <img src="./images/projects/tea-station/image-1.png" class="project-img" alt="project">
@@ -224,7 +279,7 @@
                     </div>
                 </article>
             </div>
-            <!-- project modal -->
+            <!-- tea station modal -->
             <div class="modal" id="modal-container">
                 <div class="modal-content">
                     <button class="close-modal-btn"><i class="fas fa-times"></i></button>
@@ -236,26 +291,56 @@
                             Website</a></button>
                 </div>
             </div>
-            <!-- end of project modal -->
+            <!-- end of tea station modal -->
+
             <div class="project-3">
                 <article class="project">
-                    <img src="./images/projects/food-hut/image-1.png" class="project-img" alt="project">
+                    <img src="./images/projects/TO-DO-LIST/Screen Shot 2021-11-02 at 12.13.20 PM.png" class="project-img" alt="project">
                     <div class="project-info">
-                        <h4>Food Hut Landing Page</h4>
-                        <button class="more-button"><i class="fas fa-ellipsis-h"></i></button>
+                        <h4>To Do List App</h4>
+                        <button class="more-button" id="to-do-btn"><i class="fas fa-ellipsis-h"></i></button>
                     </div>
                 </article>
             </div>
+            <!-- to do list modal -->
+            <div class="modal" id="todolist-modal-container">
+                <div class="modal-content">
+                    <button class="close-modal-btn"><i class="fas fa-times"></i></button>
+                    <img src="./images/projects/TO-DO-LIST/Screen Shot 2021-11-02 at 12.13.20 PM.png" class="modal-photo1" alt="app">
+                    <h3>TO DO LIST APP</h3>
+                    <p>A to do list application to organize your lists, it can delete and edit items. And also clear the entire list</p>
+                    <button class="btn live-btn" type="button"><a href="https://cheedie-todo-list.netlify.app/">Live
+                            Website</a></button>
+                </div>
+            </div>
+            <!-- end of to do list modal -->
             <div class="project-4">
                 <article class="project">
-                    <img src="./images/projects/landing page/image-1.png" class="project-img" alt="project">
+                    <img src="./images/projects/decision-maker/Screen Shot 2021-11-02 at 10.46.20 AM.png" class="project-img" alt="project">
                     <div class="project-info">
-                        <h4>Landing Page</h4>
-                        <button class="more-button"><i class="fas fa-ellipsis-h"></i></button>
+                        <h4>Decision Making App</h4>
+                        <button class="more-button" id="decisionBtn"><i class="fas fa-ellipsis-h"></i></button>
                     </div>
                 </article>
             </div>
         </div>
+        <!-- decision maker modal -->
+            <div class="modal" id="decision-modal-container">
+                <div class="modal-content">
+                    <button class="close-modal-btn"><i class="fas fa-times"></i></button>
+                    <img src="./images/projects/decision-maker/Screen Shot 2021-11-02 at 10.46.20 AM.png" class="modal-photo1" alt="tea station">
+                    <h3>DECISION MAKING APP</h3>
+                    <p>I developed this dynamic application combining the state management and the component model of React to help the chronic overthinker randomly make a decision between the inputed options,toggle the answer to generate another one and keep track of question popularity</p>
+                    <button class="btn live-btn" type="button"><a href="https://decisions-task.netlify.app/">Live
+                            Website</a></button>
+                </div>
+                <!-- end of decision maker modal -->
+            </div>
+            <div class="project-btn-container">
+                <button class="btn">View More</button>
+            </div>
+             
+            
     </section>
     <!-- END OF PROJECTS -->
 
@@ -273,10 +358,6 @@
                     <label for="message" class="form-label">Message:<textarea name="" id="" class="form-textarea" placeholder=""></textarea></label>
                     <button type="submit" class="btn form-btn">Submit Now</button>
                 </form>
-            <!-- <p class="free-lancer">"Don't Like Forms? Send me an <a href="mailto:cheedi.ebeogu@gmail.com"
-                    style="color: #FF4C60;">email</a> to contact
-                me! <span class="wave">👋</span>"</p> -->
-
                 <h2 class="form-title">Subscribe</h2>
                 <p class="subscribe">Subscribe to get my newsletters</p>
                 <div class="newsletter-container">
@@ -292,7 +373,6 @@
     <section class="experience section-padding">
         <div class="service-title">
             <h2 class="section-title">Experience</h2>
-            <!-- <div class="underline"></div> -->
         </div>
         <div class="experience-center section">
             <article class="experience-item">
@@ -419,6 +499,9 @@
                     <i class="fab fa-twitter"></i></a></li>
             <li><a href=" http://instagram.com/cheedie_" class="social-icon">
                     <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/cheedie" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a></li>
         </ul>
         <p>Firmly aiming for the <i class="fa fa-star star"></i> is always a good idea.</p>
         <p>&copy; <span id="date"></span> Chidinma Ebeogu.</p>
