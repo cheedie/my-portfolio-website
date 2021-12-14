@@ -917,6 +917,18 @@ FOOTER
   -webkit-text-stroke-color: orange;
 }
 
+/* 
+=================
+PROJECTS PAGE
+=================
+ */
+.projects-hero {
+  height: 40vh;
+  /* background: var(--clr-primary-10); */
+  display: grid;
+  place-items: center;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;

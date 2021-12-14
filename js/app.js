@@ -3,6 +3,9 @@ const navbar = getElement("#nav");
 const navBtn = getElement("#nav-btn");
 const closeBtn = getElement("#close-btn");
 const closeModalBtn = getElement(".close-modal-btn");
+const closeResourceModalBtn = getElement("#close-resource-modal-btn");
+const closeDecisionModalBtn = getElement("#decision-close-modal-btn");
+const closeTeaModalBtn = getElement("#tea-close-modal-btn");
 const sidebar = getElement("#sidebar");
 const topLink = getElement("#return-to-top");
 const date = getElement("#date");
@@ -57,14 +60,14 @@ date.innerHTML = new Date().getFullYear();
 modalBtn.addEventListener("click", function () {
   modal.classList.add("open-modal");
 });
-closeModalBtn.addEventListener("click", function () {
+closeTeaModalBtn.addEventListener("click", function () {
   modal.classList.remove("open-modal");
 });
 
 decisionBtn.addEventListener("click", function () {
   decisionModalContainer.classList.add("open-modal");
 });
-closeModalBtn.addEventListener("click", function () {
+closeDecisionModalBtn.addEventListener("click", function () {
   decisionModalContainer.classList.remove("open-modal");
 });
 
@@ -78,6 +81,6 @@ closeModalBtn.addEventListener("click", function () {
 todolistBtn.addEventListener("click", function () {
   todolistModalContainer.classList.add("open-modal");
 });
-closeModalBtn.addEventListener("click", function () {
+closeResourceModalBtn.addEventListener("click", function () {
   todolistModalContainer.classList.remove("open-modal");
 });
