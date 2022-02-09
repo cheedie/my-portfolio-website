@@ -349,12 +349,15 @@
             <div class="service-title">
                 <button class="btn-light">contact me</button>
                 <h2 class="form-title">Send Me a Message</h2>
-                <form action="" class="form">
-                    <label for="name" class="form-label">Name:<input type="text" placeholder="" class="form-input"></label>
+                <form 
+                action="https://formspree.io/f/xrgjpvko"
+  method="POST" class="form">
+                    <label for="name" class="form-label">Name:
+                        <input name="name" type="text" placeholder="" class="form-input"></label>
                     <label for="email" class="form-label">
-                       Email:<input type="email" placeholder="" class="form-input">
+                       Email:<input type="email" placeholder="" name="_replyto" class="form-input">
                     </label>
-                    <label for="message" class="form-label">Message:<textarea name="" id="" class="form-textarea" placeholder=""></textarea></label>
+                    <label for="message" class="form-label">Message:<textarea name="message"  class="form-textarea" placeholder=""></textarea></label>
                     <button type="submit" class="btn form-btn">Submit Now</button>
                 </form>
                 <h2 class="form-title">Subscribe</h2>
